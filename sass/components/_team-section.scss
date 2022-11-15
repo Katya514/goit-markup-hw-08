@@ -1,0 +1,140 @@
+.team-section {
+  background-color: $greyer-white;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      // padding-bottom: 60px;
+      // padding-top: 60px;
+      padding-right: 15px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding-bottom: 94px;
+      padding-top: 94px;
+    }
+  }
+}
+
+.team-section__list {
+  @media screen and (min-width: $tablet) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  .team-section__member {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    background-color: $plain-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $tablet) {
+      & {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: calc((100% - 4 * 15px) / 2);
+        margin: -15px;
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        &:not(:last-child) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .team-section__image {
+    width: 100%;
+  }
+
+  .member-descr {
+    padding: 30px 0px 24px 0px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      & {
+        padding: 30px 0px;
+      }
+    }
+  }
+
+  .member-descr__name {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.188;
+    text-transform: capitalize;
+
+    color: $header-color;
+  }
+
+  .member-descr__position {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.166;
+    text-transform: capitalize;
+
+    color: $main-text;
+  }
+
+  .socials {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .socials__type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $plain-white;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    fill: $icons-bckg;
+
+    transition-duration: $trans-time;
+    transition-timing-function: $trans-type;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      background-size: 100%;
+      fill: $plain-white;
+    }
+  }
+}

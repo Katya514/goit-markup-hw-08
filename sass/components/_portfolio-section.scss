@@ -1,0 +1,130 @@
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filters {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filters__btn {
+    padding: 6px 25px;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-color: $greyer-white;
+    color: $header-color;
+
+    transition-duration: $trans-time;
+    transition-timing-function: $trans-type;
+
+    &:hover,
+    &:focus,
+    &active {
+        background-color: $accent-color;
+        color: $plain-white;
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+.examples__link {
+    text-decoration: none;
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.examples__item {
+    flex-basis: calc(100% / 3 - 30px);
+
+    background-color: var(--plain-white);
+    border-bottom: 1px solid $border-examples;
+
+    transition-duration: $trans-time;
+    transition-timing-function: $trans-type;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &:hover .examples__container-pop {
+        transform: translateY(0);
+    }
+}
+
+.examples__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.examples__container-pop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    transform: translateY(100%);
+
+    transition: transform $trans-time;
+
+    color: $plain-white;
+    background-color: $pop-up-overlay;
+}
+
+.examples__overlay {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: $plain-white;
+}
+
+.examples__descr {
+    padding: 20px 24px;
+    border: 1px solid $border-examples;
+    border-top: none;
+}
+
+.examples__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+
+    color: $header-color;
+}
+
+.examples__type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+
+    color: $main-text;
+}

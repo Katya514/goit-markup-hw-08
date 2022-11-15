@@ -1,0 +1,144 @@
+.advantages-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // @media screen and (min-width: $tablet) {
+  //   & {
+  //     padding: 0;
+  //   }
+  // }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
+
+.advantages-section__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    & {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.advantages-section__item {
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    & {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: calc((100% - 4 * 15px) / 2);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      display: flex;
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+.advantages-section__icon {
+  max-width: 70px;
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 55px;
+
+  background-color: $greyer-white;
+  border-radius: 4px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      max-width: 420px;
+      margin-right: 0px;
+      margin-left: 0px;
+
+      width: 270px;
+      height: 120px;
+    }
+  }
+}
+
+.advantages-section__title {
+  display: block;
+  max-width: 270px;
+  gap: 30px;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $header-color;
+
+  @media screen and (min-width: $tablet) {
+    & {
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+}
+
+.advantages-section__text {
+  max-width: 450px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  color: $main-text;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      margin-right: 0;
+      margin-left: 0;
+      min-width: 270px;
+    }
+  }
+}

@@ -1,0 +1,248 @@
+@import "../utils/breakpoints";
+
+.header {
+  // background-color: $plain-white;
+  // border-bottom: 1px solid $border-bottom;
+
+  .header__container {
+    background-color: $plain-white;
+    border-bottom: 1px solid $border-bottom;
+
+    @media screen and (min-width: $tablet) {
+      & {
+        display: inline-flex;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      & {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .navigation__links {
+    display: none;
+    background-color: $plain-white;
+
+    &.navigation__item.current {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-left: 87px;
+        margin-right: 96px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 0;
+      }
+    }
+  }
+
+  .header__logo {
+    font-size: 24px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-decoration: none;
+    color: $plain-black;
+    font-family: Raleway, sans-serif;
+
+    @media screen and (min-width: $desktop) {
+      & {
+        display: flex;
+        margin-right: 93px;
+        align-items: center;
+
+        font-size: 26px;
+        line-height: 1.19;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: -5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $desktop) {
+      & {
+        margin: 0;
+      }
+    }
+  }
+
+  .navigation__item {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $header-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &.current::after {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      content: "";
+
+      width: 100%;
+      height: 4px;
+
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+
+  .navigation__menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  // .navigation__icon-close-menu {
+  //   padding: 0;
+  // }
+  // .navigation__icon-menu {
+  //   padding: 0;
+  // }
+  .contacts {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      & {
+        display: block;
+        padding-top: 21px;
+        padding-bottom: 21px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+      }
+    }
+  }
+
+  .contacts__email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+
+    color: $main-text;
+    fill: $main-text;
+
+    transition-duration: $trans-time;
+    transition-timing-function: $trans-type;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contacts__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $main-text;
+    fill: $main-text;
+
+    transition-duration: $trans-time;
+    transition-timing-function: $trans-type;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      & {
+        padding: 0;
+      }
+    }
+  }
+}
