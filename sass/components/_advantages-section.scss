@@ -17,13 +17,11 @@
 }
 
 .advantages-section__list {
-  display: flex;
-  flex-wrap: wrap;
-
   @media screen and (min-width: $tablet) {
     & {
       display: inline-flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 30px;

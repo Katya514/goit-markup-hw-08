@@ -8,6 +8,8 @@
   z-index: 1;
   transition: opacity $trans-time, visibility $trans-time;
 
+  overflow: scroll;
+
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -20,10 +22,11 @@
 .modal {
   position: absolute;
   padding: 40px;
+  margin: 93px 0px;
 
-  width: 528px;
+  width: 450px;
   max-height: 581px;
-  height: 100%;
+  height: 609px;
 
   top: 50%;
   left: 50%;
@@ -34,8 +37,22 @@
 
   background-color: $plain-white;
 
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    & {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    & {
+      margin: 206px auto;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     & {
+      width: 528px;
       padding: 40px;
     }
   }
@@ -170,7 +187,7 @@
   position: relative;
   padding-left: 28px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 
@@ -197,6 +214,12 @@
     background-image: url(../images/icon-check.jpg);
     border-radius: 2px;
     opacity: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      font-size: 14px;
+    }
   }
 }
 
