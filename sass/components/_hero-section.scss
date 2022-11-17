@@ -29,7 +29,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    & {
+    .hero-section {
       background-image: $hero-overlay,
         url(../images/tablet/hero-team-tablet@2x.jpg);
     }
@@ -52,7 +52,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    & {
+    .hero-section {
       background-image: $hero-overlay,
         url(../images/desktop/hero-team-desktop@2x.jpg);
     }
