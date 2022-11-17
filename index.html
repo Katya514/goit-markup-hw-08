@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <!--WHAT WE DO SECTION-->
+    <!--WORK SECTION-->
     <section class="work-section">
       <div class="container">
         <h2 class="section__title">Чим ми займаємося</h2>
@@ -141,7 +141,7 @@
             <div class="work-section__box">
               <h3 class="work-section__text">Десктопні додатки</h3>
             </div>
-            <img class="work-section__image" src="./images/wireframes.jpg" alt="Людина працює за планшетом"
+            <img class="work-section__image" src="./images/desktop/wireframes-desktop.jpg" alt="Людина працює за планшетом"
               width="370" />
           </li>
           <li class="work-section__item">
@@ -149,14 +149,14 @@
               <h3 class="work-section__text">Мобільні додатки</h3>
             </div>
 
-            <img class="work-section__image" src="./images/layout.jpg"
+            <img class="work-section__image" src="./images/desktop/layout-desktop.jpg"
               alt="Людина тримає телефон та працює за комп'ютером" width="370" />
           </li>
           <li class="work-section__item">
             <div class="work-section__box">
               <h3 class="work-section__text">Дизайнерські рішення</h3>
             </div>
-            <img class="work-section__image" src="./images/design.jpg"
+            <img class="work-section__image" src="./images/desktop/design-desktop.jpg"
               alt="Людина тримає планшет з зображенням кольорів" width="370" />
           </li>
         </ul>
@@ -170,7 +170,31 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team-section__list">
           <li class="team-section__member">
-            <img class="team-section__image" src="./images/Ihor.jpg" alt="Усміхнений хлопець в окулярах" width="270" />
+
+            <picture>
+                <source
+                srcset="./images/mobile/ihor-mobile.jpg 1x,
+                  ./images/mobile/ihor-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/ihor-tablet.jpg 1x,
+                  ./images/tablet/ihor-tablet@2x.jpg 2x"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/ihor-desktop.jpg 1x,
+                  ./images/desktop/ihor-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                loading="lazy"
+                src="./images/desktop/ihor-desktop.jpg"
+                alt="Усміхнений хлопець в окулярах"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+              </picture>
+
             <div class="member-descr">
               <h3 class="member-descr__name">Ігор дем'яненко</h3>
               <p class="member-descr__position">Product designer</p>
@@ -207,7 +231,32 @@
             </div>
           </li>
           <li class="team-section__member">
-            <img class="team-section__image" src="./images/Olga.jpg" alt="Усміхнена дівчина в окулярах" width="270" />
+
+            <picture>
+                <source
+                srcset="./images/mobile/olha-mobile.jpg 1x,
+                  ./images/mobile/olha-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/olha-tablet.jpg 1x,
+                  ./images/tablet/olha-tablet@2x.jpg 2x"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/olha-desktop.jpg 1x,
+                  ./images/desktop/olha-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                loading="lazy"
+                src="./images/desktop/olha-desktop.jpg"
+                alt="Усміхнена дівчина в окулярах"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+              </picture>
+
+
             <div class="member-descr">
               <h3 class="member-descr__name">Ольга рєпіна</h3>
               <p class="member-descr__position">Frontend developer</p>
@@ -244,7 +293,31 @@
             </div>
           </li>
           <li class="team-section__member">
-            <img class="team-section__image" src="./images/Mykola.jpg" alt="Усміхнений хлопець" width="270" />
+
+            <picture>
+                <source
+                srcset="./images/mobile/mykola-mobile.jpg 1x,
+                  ./images/mobile/mykola-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/mykola-tablet.jpg 1x,
+                  ./images/tablet/mykola-tablet@2x.jpg 2x"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/mykola-desktop.jpg 1x,
+                  ./images/desktop/mykola-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                loading="lazy"
+                src="./images/desktop/mykola-desktop.jpg"
+                alt="Усміхнений хлопець"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+              </picture>
+
             <div class="member-descr">
               <h3 class="member-descr__name">Микола тарасов</h3>
               <p class="member-descr__position">Marketing</p>
@@ -281,7 +354,31 @@
             </div>
           </li>
           <li class="team-section__member">
-            <img class="team-section__image" src="./images/Myhailo.jpg" alt="Хлопець в окулярах" width="270" />
+
+              <picture>
+                <source
+                srcset="./images/mobile/myhailo-mobile.jpg 1x,
+                  ./images/mobile/myhailo-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/myhailo-tablet.jpg 1x,
+                  ./images/tablet/myhailo-tablet@2x.jpg 2x"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/myhailo-desktop.jpg 1x,
+                  ./images/desktop/myhailo-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+                <img
+                loading="lazy"
+                src="./images/desktop/myhailo-desktop.jpg"
+                alt="Хлопець в окулярах"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+              </picture>
+
             <div class="member-descr">
               <h3 class="member-descr__name">Михайло єрмаков</h3>
               <p class="member-descr__position">UI designer</p>
@@ -539,7 +636,7 @@
           </label>
         </div>
 
-        <button class="main-btn main-btn--send" type="submit">Відправити</button>
+        <button class="main-btn__send" type="submit">Відправити</button>
 
       </form>
     </div>

@@ -1,35 +1,60 @@
 .hero-section {
   background-color: $background-color;
   text-align: center;
-  // max-width: 480px;
   padding: 118px 0px;
+  max-width: 768px;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/team-work.jpg);
+  background-image: $hero-overlay, url(../images/mobile/hero-team-mobile.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  // @media screen and (min-width: $tablet) {
-  //   & {
-  //     // max-width: 768px;
-
-  //   }
-  // }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      max-width: 1600px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 200px 0px;
+      background-image: $hero-overlay,
+        url(../images/mobile/hero-team-mobile@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .hero-section {
+    background-image: $hero-overlay, url(../images/tablet/hero-team-tablet.jpg);
+    max-width: 1600px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: $hero-overlay,
+        url(../images/tablet/hero-team-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+
+    background-image: $hero-overlay,
+      url(../images/desktop/hero-team-desktop.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: $hero-overlay,
+        url(../images/desktop/hero-team-desktop@2x.jpg);
     }
   }
 }
