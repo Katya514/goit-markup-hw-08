@@ -16,7 +16,7 @@
 .clients-section__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+
   @media screen and (min-width: $desktop) {
     & {
       display: inline-flex;

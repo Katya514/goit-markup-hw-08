@@ -147,12 +147,6 @@
     }
   }
 
-  // .navigation__icon-close-menu {
-  //   padding: 0;
-  // }
-  // .navigation__icon-menu {
-  //   padding: 0;
-  // }
   .contacts {
     display: none;
 
@@ -202,6 +196,7 @@
       & {
         padding: 0;
         margin-bottom: 10px;
+        font-size: 12px;
       }
     }
 
@@ -210,6 +205,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
         margin-bottom: 0;
+        font-size: 14px;
       }
     }
   }
@@ -242,6 +238,13 @@
     @media screen and (min-width: $tablet) {
       & {
         padding: 0;
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      & {
+        font-size: 14px;
       }
     }
   }
