@@ -13,15 +13,14 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  width: 326px;
   margin-bottom: 40px;
+  gap: 8px;
 
   @media screen and (min-width: $tablet) {
     & {
       display: inline-flex;
       width: 100%;
       justify-content: center;
-      gap: 8px;
       margin-bottom: 30px;
     }
   }

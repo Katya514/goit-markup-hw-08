@@ -88,6 +88,11 @@ form {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -648,7 +653,7 @@ img {
   }
 }
 
-.header .header__container {
+.header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -1119,7 +1124,6 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  margin: 93px 0px;
   width: 450px;
   max-height: 581px;
   height: 609px;
@@ -1370,8 +1374,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 326px;
   margin-bottom: 40px;
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .filters {
@@ -1382,7 +1386,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 8px;
     margin-bottom: 30px;
   }
 }

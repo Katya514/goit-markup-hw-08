@@ -1,13 +1,10 @@
 @import "../utils/breakpoints";
 
 .header {
-  // background-color: $plain-white;
-  // border-bottom: 1px solid $border-bottom;
+  background-color: $plain-white;
+  border-bottom: 1px solid $border-bottom;
 
   .header__container {
-    background-color: $plain-white;
-    border-bottom: 1px solid $border-bottom;
-
     @media screen and (min-width: $tablet) {
       & {
         display: inline-flex;
